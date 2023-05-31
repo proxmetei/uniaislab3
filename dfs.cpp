@@ -53,7 +53,12 @@ int main() {
     int s,f;
     cout<<"Insert s and f"<<endl;
     cin>> s>>f;
+    if(s>3||s<0||f>3||f<0){
+        cout<<"Некорректные входные значения"<<endl;
+        return  -1;
+    }
   g.DFS(s,f);
+
     cout <<endl<<"Длина равна: "<<g.globcount<<endl;
   return 0;
 }
