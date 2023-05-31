@@ -46,18 +46,18 @@ void Graph::DFS(int vertex, int fin, int count=0) {
 }
  
 int main() {
-  Graph g(4);//комментарии
+  Graph g(4);//commetns
   g.addEdge(0, 2);
   g.addEdge(3, 1);
   g.addEdge(1, 3);
     int s,f;
     cout<<"Insert s and f"<<endl;
     cin>> s>>f;
-    if(s>3||s<0||f>3||f<0){// есои выходит за рамки
+    if(s>3||s<0||f>3||f<0){// goes off the corners
         cout<<"Некорректные входные значения"<<endl;
         return  -1;
     }
-  g.DFS(s,f);//поиск
+  g.DFS(s,f);//search
 
     cout <<endl<<"Длина равна: "<<g.globcount<<endl;
   return 0;
